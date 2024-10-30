@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Emily Hashimoto-Roth</title>
+        <link rel="icon" href="woman-scientist-light-skin-tone.ico"/>
+        <!-- Bootstrap -->
+        <link href="./css/bootstrap-4.4.1.css" rel="stylesheet">
+        <!-- JS--> 
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap-4.4.1.js"></script>
+        <!-- Transparent-to-opaque navigation menu -->
+        <script>
+            $(document).ready(function() {
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 56) {
+                        $(".navbar").addClass("bg-white");
+                    } else {
+                        $(".navbar").removeClass("bg-white");
+                    }
+                });
+                $(".navbar-toggler").click(function() {
+                    if (!$(".navbar-collapse").hasClass("show")) {
+                        $(".navbar").addClass("bg-white");
+                    } else {
+                    if ($(window).scrollTop() < 56) {
+                        $(".navbar").removeClass("bg-white");
+                        } else {
+                        }
+                    }
+                });
+            });
+        </script>
+        <script>
+            function addMargin() {
+                window.scrollTo(0, window.pageYOffset - 130);
+            }
+            window.addEventListener('hashchange', addMargin);
+        </script>
+    </head>
+    <body>
+        <!-- Homepage Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="/">
+                <h3>EHR</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cv">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center my-5">
+                <h1>Hello, my name is Emily &#128105;&#127995;&#8205;&#128300;</h1>
+                <p class="emphasis mt-3">Ph.D. student in computational biology, University of Toronto, Canada</p>
+            </div>
+        </div>
+        <!-- About -->
+        <div class="container mb-10" id="about">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="d-none d-sm-block">
+                        <h2>&#127803; About</h2>
+                    </div>
+                    <div class="d-sm-none">
+                        <h5>&#127803; About</h5>
+                    </div>
+                    <p>Nice to meet you! I'm a second-year Ph.D. student in the Molecular Genetics program (Computational Biology track) at the University of Toronto. My sights were set on pursuing this degree after really enoying my M.Sc. experience, focused on research in bioinformatics for mass spectrometry-based proteomics, protein-protein interactions, machine learning, and data visualization. Currently, I use mass spectrometry-based proteomics, lipidomics, and metabolomics methods and statistical modelling to characterize the pathological onset of gestational diabetes mellitus and future progression to type II diabetes.</p>
+                    <div class="d-none d-lg-block">
+                        <p class="emphasis">Let's connect on social media</p>
+                        <div class="social">
+                            <a href="https://twitter.com/em_hashimoto" class="social-link" target="_blank" aria-label="Link to Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/emilyhashimotoroth/" class="social-link" target="_blank" aria-label="Link to LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-lg-none my-5">
+                        <p class="emphasis text-center">Let's connect on social media</p>
+                        <div class="social justify-content-center">
+                            <a href="https://twitter.com/em_hashimoto" class="social-link-mobile" target="_blank" aria-label="Link to Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/emilyhashimotoroth/" class="social-link-mobile" target="_blank" aria-label="Link to LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 my-auto">
+                    <img src="./img/ehr-headshot-02.png" class="img-fluid" alt="Photo from my MSc convocation" aria-label="Photo from my MSc convocation">
+                </div>
+            </div>
+        </div>
+        <!-- CV -->
+        <div class="container mb-10" id="cv">
+            <div class="row">
+                <div class="d-none d-sm-block col-12">
+                    <h2>&#127891; Curriculum Vitae</h2>
+                    <p>Download my full CV as a .pdf</p>
+                    <a href="./docs/EHashimotoRoth_CV_2024.pdf" role="button" class="btn btn-ehr" target="_blank" alt="Button to download my full CV"  aria-label="Download my full CV">download cv</a>
+                </div>
+                <div class="d-sm-none col-12">
+                    <h5>&#127891; Curriculum Vitae</h5>
+                    <p>Download my full CV as a .pdf</p>
+                    <a href="./docs/EHashimotoRoth_CV_2024.pdf" role="button" class="btn btn-ehr" target="_blank" alt="Button to download my full CV"  aria-label="Download my full CV">download cv</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mt-5">
+                    <h5>Experience</h5>
+                    <!-- first -->
+                    <p class="cv-lead">Developer (part-time) </p>
+                    <p class="cv-info">Sept 2022 - present</p>
+                    <p class="cv-info">Faculty of Medicine, University of Ottawa</p>
+                    <!-- second -->
+                    <p class="cv-lead">Junior Research Technician</p>
+                    <p class="cv-info">May 2022 - Aug 2022</p>
+                    <p class="cv-info">Faculty of Medicine, University of Ottawa</p>
+                    <!-- third -->
+                    <p class="cv-lead">Graduate Student Research Assistant (part-time internship)</p>
+                    <p class="cv-info">Feb 2021 - Dec 2021</p>
+                    <p class="cv-info">AI for Design Team, National Research Council of Canada</p>
+                    <!-- fourth -->
+                    <p class="cv-lead">Junior Researcher</p>
+                    <p class="cv-info">May 2018 - Aug 2019</p>
+                    <p class="cv-info">Job Bank, Employment and Social Development Canada</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-5">
+                    <h5>Education</h5>
+                    <!-- PhD -->
+                    <p class="cv-lead">Ph.D. in Molecular Genetics (Computational Biology track)</p>
+                    <p class="cv-info">Sept 2022 - present </p>
+                    <p class="cv-info">Faculty of Medicine, University of Toronto</p>
+                    <!-- MSc -->
+                    <p class="cv-lead">M.Sc. in Biochemistry (specializing in Bioinformatics)</p>
+                    <p class="cv-info">Sept 2019 - Dec 2021</p>
+                    <p class="cv-info">Faculty of Medicine, University of Ottawa</p>
+                    <!-- HBSc -->
+                    <p class="cv-lead">H.B.Sc. in Biopharmaceutical Science (Genomics option)</p>
+                    <p class="cv-info">Sept 2015 - Apr 2019</p>
+                    <p class="cv-info">Faculty of Science, University of Ottawa</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <h5>Professional Activity</h5>
+                    <!-- biotechTO -->
+                    <p class="cv-lead">Co-Founder and Communications Director</p>
+                    <p class="cv-info">Nov 2023 - present</p>
+                    <p class="cv-info">Toronto Bioinformatics Hackathon</p>
+                    <!-- hupo moc -->
+                    <p class="cv-lead">Marketing and Outreach Committee Member</p>
+                    <p class="cv-info">Jan 2021 - present</p>
+                    <p class="cv-info">Human Proteome Organization</p>
+                    <!-- hupo ecr -->
+                    <p class="cv-lead">Early Career Researcher Committee Member</p>
+                    <p class="cv-info">Nov 2020 - present</p>
+                    <p class="cv-info">Human Proteome Organization</p>
+                    <!-- cnpn -->
+                    <p class="cv-lead">Operations Management Team Member</p>
+                    <p class="cv-info">Nov 2020 - present</p>
+                    <p class="cv-info">Canadian National Proteomics Network</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-design">
+            <!-- Publications -->
+            <div class="container mb-10" id="publications">
+                <div class="row">
+                    <div class="d-none d-sm-block col-12">
+                        <h2>&#128218; Publications</h2>
+                        <p>* = first author, co-first author</p>
+                    </div>
+                    <div class="d-sm-none col-12">
+                        <h5>&#128218; Publications</h5>
+                        <p>* = first author, co-first author</p>
+                    </div>
+                </div>
+                <div class="row pub mt-4">
+                    <div class="col-12">
+                        <p>Ou, H.*, Surendra, A.*, McDowell, G. S. V., Hashimoto-Roth, E., Xia, J., Bennett, S. A. L., &amp; Čuperlović-Culf, M. (2024) <strong>Imputation for Lipidomics and Metabolomics (ImpLiMet): Online optimization and method selection for missing data imputation.</strong> <em>Diabetes/Metabolism Research and Reviews</em>, under review.</p>
+                    </div>
+                </div>
+                <div class="row pub mt-4">
+                    <div class="col-12">
+                        <p>Ng, T.*, Hashimoto-Roth, E., Röst, H., &amp; Wheeler, M. (2024) <strong>Plasma biomarkers used for the early prediction of gestational diabetes mellitus.</strong> <em>Diabetes/Metabolism Research and Reviews</em>, under review.</p>
+                    </div>
+                </div>
+                <div class="row pub mt-4">
+                    <div class="col-12">
+                        <p>Hashimoto-Roth, E.*, Forget, D., Gaspar, V., Bennett, S. A. L., Gauthier, M.-S., Coulombe, B., &amp; Lavallée-Adam, M. (2024) <strong>MAGPIE: A machine learning approach to decipher protein-protein interactions in human plasma.</strong> <em>Journal of Proteome Research</em>, accepted.</p>
+                    </div>
+                </div>
+                <div class="row pub mt-4">
+                    <div class="col-12">
+                        <p>Hashimoto-Roth, E.*, Surendra, A., Lavallée-Adam, M., Bennett, S. A. L., &amp; Čuperlović-Culf, M. (2022) <strong>METAbolomics data Balancing with Over-sampling Algorithms (META-BOA): an online resource for addressing class imbalance.</strong> <em>Bioinformatics</em>, 38(23), 5326–5327.</p>
+                        <a href="./docs/HashimotoRoth2022_Bioinformatics.pdf" role="button" class="btn btn-ehr" target="_blank" alt="Button to download .pdf" aria-label="Download .pdf">download .pdf</a>
+                    </div>
+                </div>
+                <div class="row pub mt-5">
+                    <div class="col-12">
+                        <p>Nadeau, R.*, Shahryari Fard, S.*, Scheer, A.*, Hashimoto-Roth, E.*, Nygard, D.*, Abramchuk, I.*, Chung, Y. E.*, Bennett, S. A. L., &amp; Lavallée-Adam, M. (2020). <strong>Computational Identification of Human Biological Processes and Protein Sequence Motifs Putatively Targeted by SARS-CoV-2 Proteins Using Protein-Protein Interaction Networks.</strong> <em>Journal of Proteome Research</em>, 19(11), 4553–4566.</p>
+                        <a href="./docs/Nadeau2020_JPR.pdf" role="button" class="btn btn-ehr" target="_blank" alt="Button to download .pdf" aria-label="Download .pdf">download .pdf</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer class="page-footer">
+                <div class="footer-copyright text-center mt-5">
+                    <p class="footer-text">Copyright &copy; 2024 &middot; Emily Hashimoto-Roth, M.Sc.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
